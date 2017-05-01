@@ -9,8 +9,10 @@ If you manage to optimize the settings, please perform either a pull request or 
 #### Settings (contained in `js/main.js`):
 * `WIDTH` set the width of the playing field
 * `HEIGHT` set the height of the playing field
-* `SCORE_RADIUS` set the distance to the target from where genomes get assigned score
 * `MAX_SPEED` set the maximal multiplier speed a genome can have (smaller genomes move faster)
+* `START_X` set the x-location from which each genome (and the target) starts
+* `START_Y` set the y-location from which each genome (and the target) starts
+* `SCORE_RADIUS` set the distance to the target from where genomes get assigned score
 * `PLAYER_AMOUNT` set the amount of genomes that play on the field (population size)
 * `ITERATIONS` set the amount of iterations/frames each generation is tested for
 * `START_HIDDEN_SIZE` set the amount of hidden nodes each genome starts witch
