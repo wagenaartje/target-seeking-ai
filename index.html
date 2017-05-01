@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <title>Target-seeking AI</title>
+
+    <!-- Neataptic -->
+    <script src="https://cdn.rawgit.com/wagenaartje/neataptic/8ac5bbda/dist/neataptic.min.js"></script>
+
+    <!-- Other libraries -->
+    <script src="libs/p5.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://marvl.infotech.monash.edu/webcola/cola.v3.min.js"></script>
+
+    <!-- Visualisation -->
+    <script src="js/graph.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          <h2>Playing field</h2>
+          <p>
+             The following neural agents are a result of 100+ generations of evolution.
+             If you have any remarks, or have managed to improve the evolution process,
+             please make a post <a href="https://github.com/wagenaartje/neataptic/issues">
+             here</a>. You can also perform a pull request on this repo. The genomes
+             are alive live at the moment (every 250 frames). <i>Click on the field
+             to relocate the target!</i>
+          </p>
+        </div>
+        <div class="col-md-3">
+          <center><h2>Best genome</h2></center>
+        </div>
+        <div class="row">
+          <div class="col-md-9">
+            <div id="field">
+            </div>
+          </div>
+          <div class="col-md-3">
+              <svg class="best"/>
+          </div>
+      </div>
+    </div>
+
+    <!-- The simulation + genetic algorithm -->
+    <script src="js/main.js"></script>
+    <script src="js/population.js"></script>
+    <script src="js/walker.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/field.js"></script>
+  </body>
+</html>
