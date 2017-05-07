@@ -59,7 +59,7 @@ function initNeat(){
   }
 
   // Draw the first graph
-  drawGraph(neat.population[0].graph($('.best').width(), $('.best').height()), '.best', false);
+  drawGraph(neat.population[0].graph($('.best').width()/2, $('.best').height()/2), '.best');
 }
 
 /** Start the evaluation of the current generation */
@@ -90,7 +90,7 @@ function endEvaluation(){
   neat.sort();
 
   // Draw the best genome
-  drawGraph(neat.population[0].graph($('.best').width(), $('.best').height()), '.best', false);
+  drawGraph(neat.population[0].graph($('.best').width()/2, $('.best').height()/2), '.best');
 
   // Init new pop
   var newPopulation = [];
