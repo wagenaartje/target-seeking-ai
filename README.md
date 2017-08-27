@@ -1,7 +1,14 @@
 # Target-seeking AI
 This repository shows how you can use [Neataptic](https://github.com/wagenaartje/neataptic) to succesfully teach neural networks to trace targets. You can see the genomes live in action [here](https://wagenaartje.github.io/target-seeking-ai/). These genomes have been trained for over 100 generations and are very effective. Visualisation done with [P5.js](https://p5js.org/). The next step would be adding collisions, to possibly reveal some interesting tactics.
 
-[Read an article on this repo here](https://wagenaartje.github.io/neataptic/articles/targetseeking/). 
+[Read an article on this repo here](https://wagenaartje.github.io/neataptic/articles/targetseeking/).
+
+These forks of this library are interesting to check out as well:
+
+* [corpr8's fork](https://corpr8.github.io/neataptic-targetseeking-tron/)
+gives each neural agent its own acceleration, as well as letting each arrow
+remain in the same place after each generation. This creates a much more
+'fluid' process.
 
 ## Settings
 If you manage to optimize the settings, please perform either a pull request or create an issue [here](https://github.com/wagenaartje/neataptic/issues). 
